@@ -28,3 +28,6 @@ Route::post('/send-form', 'HomeController@sendForm')->name('send.form');
 Route::get('/manager/set-status/{app}', 'HomeController@setStatus');
 // Обновления email менеджера
 Route::post('/manager/set-email/{user}', 'HomeController@setEmail')->name('manager.set.email');
+// Импорт CSV
+Route::get('/import', 'CoreController@index')->name('import.index');
+Route::post('/import', 'CoreController@import')->name('import');

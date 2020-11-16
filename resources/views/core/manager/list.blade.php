@@ -5,7 +5,7 @@
         <td>{{ $item->message }}</td>
         <td>{{ $item->user_name }}</td>
         <td>{{ $item->user_email }}</td>
-        <td><a href="{{ $item->file }}" target="_blank">просмотр</a></td>
+        <td><a href="{{ $item->link }}" target="_blank">просмотр</a></td>
         <td>{{ $item->created_at }}</td>
         <td>
             @if($item->status == 'new')

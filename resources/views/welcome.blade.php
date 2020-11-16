@@ -85,7 +85,7 @@
                 </div>
 
                 <div class="links">
-
+                    <a href="{{ route('import.index') }}">Импорт CSV</a>
                 </div>
             </div>
         </div>
